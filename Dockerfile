@@ -4,5 +4,5 @@ WORKDIR /app
 COPY . .
 RUN npm install
 
-EXPOSE 8002
-CMD ["nodemon", "app.js"]
+EXPOSE 8004
+CMD ["npx","nodemon", "app.js"]

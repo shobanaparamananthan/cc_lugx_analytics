@@ -13,7 +13,7 @@ app.use('/', eventRoutes);
 
 const PORT = process.env.PORT || 8004;
 app.listen(PORT, () => {
-  console.log(`🎮 Game Service running on port ${PORT}`);
+  console.log(`analytics Service running on port ${PORT}`);
 }).on('error', (err) => {
-  console.error('❌ Failed to start server:', err);
+  console.error(' Failed to start server:', err);
 });

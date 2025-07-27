@@ -14,7 +14,7 @@ router.post('/events', async (req, res) => {
   if (!event_type || !page_url || !session_id) {
     return res.status(400).json({ error: 'Missing required fields' });
   }
-console.log("sss",process.env.CLICKHOUSE_D)
+//console.log("sss",process.env.CLICKHOUSE_D)
   try {
     await clickhouse.insert({
       table: `web_analytics`,
