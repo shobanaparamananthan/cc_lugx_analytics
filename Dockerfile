@@ -1,8 +1,11 @@
 FROM node:18
 
 WORKDIR /app
-COPY . .s3click
+
+COPY . .
+
 RUN npm install
 
 EXPOSE 8004
-CMD ["npx","nodemon", "app.js"]
+
+CMD ["npm", "start"]
