@@ -1,7 +1,7 @@
 FROM node:18
 
 WORKDIR /app
-COPY . .
+COPY . .s3click
 RUN npm install
 
 EXPOSE 8004
